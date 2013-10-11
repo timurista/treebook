@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+gem 'thin'
+#the above fixes the problem of the 304 class, so I can run css files
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
