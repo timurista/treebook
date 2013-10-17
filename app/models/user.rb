@@ -8,4 +8,12 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me,
   					:first_name, :last_name, :profile_name
   # attr_accessible :title, :body
+
+  has_many :statuses
+  # returns array of all statuses user has made
+
+  def full_name
+  	first_name + " " + last_name
+  end
+  # method that returns full name to use with user.full_name
 end

@@ -27,6 +27,9 @@ gem 'thin'
 gem 'devise'
 #to use authentication
 
+gem 'simple_form'
+# to allow styling of our form
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
