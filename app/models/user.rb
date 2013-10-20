@@ -9,6 +9,16 @@ class User < ActiveRecord::Base
   					:first_name, :last_name, :profile_name
   # attr_accessible :title, :body
 
+  #this validates our code, using presence
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :profile_name, presence: true,
+                           uniqueness: true,
+                           format: {
+    with: /\A[a-zA-Z\-\_]+\Z/,
+    message: 'must be formatted correctly.'
+  }
+
   has_many :statuses
   # returns array of all statuses user has made
 
