@@ -9,5 +9,5 @@ tim:
 jim:
   first_name: "Jim"
   last_name: "Jimson"
-  profile_name: "Hiya"
+  profile_name: "hiya"
   email: "jim@email.com"
