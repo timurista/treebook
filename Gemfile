@@ -9,7 +9,7 @@ group :development, :test do
 end
 
 group :production do
-	gem "pg"
+	gem 'pg'
 end
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +30,11 @@ gem 'thin'
 
 gem 'devise'
 #to use authentication
+
+group :test do
+	gem 'shoulda'
+end
+#to use shoulda for creating tests only inside test group
 
 gem 'simple_form'
 # to allow styling of our form
